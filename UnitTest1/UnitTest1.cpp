@@ -59,6 +59,10 @@ namespace UnitTest1
 		{
 			const int test = 10;
 			int* array = new int[test];
+			for (int i = 0; i < test; i++)
+			{
+				array[i] = rand() % 100;
+			}
 			insertionSort(array, test);
 			for (int i = 0; i < test-1; i)
 			{

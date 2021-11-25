@@ -14,6 +14,10 @@ namespace UnitTest1
 			const int test = 5;
 			int* array = new int[test];
 			int start = 0; int end = test - 1;
+			for (int i = 0; i < test; i++)
+			{
+				array[i] = rand() % 100;
+			}
 			qSort(array, start, end);
 			for (int i = 0; i < test - 1; i++) 
 			{
@@ -25,6 +29,10 @@ namespace UnitTest1
 		{
 			const int test = 10;
 			int* array = new int[test];
+			for (int i = 0; i < test; i++)
+			{
+				array[i] = rand() % 100;
+			}
 			bogoSort(array, test);
 			for (int i = 0; i < test - 1; i++) 
 			{
